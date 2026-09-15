@@ -48,7 +48,7 @@ RUN curl -LsSf https://astral.sh/uv/install.sh \
  && rm -rf /root/.cache /tmp/*
 
 
-ARG BUILD_ARCH=amd64
+ARG BUILD_ARCH=aarch64
 RUN case "${BUILD_ARCH}" in \
         amd64)   HA_ARCH="amd64" ;; \
         aarch64) HA_ARCH="aarch64" ;; \
